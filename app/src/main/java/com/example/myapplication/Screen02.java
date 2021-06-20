@@ -36,6 +36,7 @@ public class Screen02 extends AppCompatActivity {
         textName = findViewById(R.id.tvName2);
         tvGia = findViewById(R.id.tvGia2);
         tvSoluong = findViewById(R.id.tvSoluong);
+        btnAdd = findViewById(R.id.btnAddToCard);
         Intent intent = getIntent();
         if(intent!=null){
             coffe = (Coffe) intent.getSerializableExtra("key1");
