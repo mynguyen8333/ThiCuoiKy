@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "676963680403",
+    "project_id": "thicuoiky-390a1",
+    "storage_bucket": "thicuoiky-390a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676963680403:android:7de3d30b79834d5fb14d66",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676963680403-q5u3q652auk6adoovfbed7s75jl1gftg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArImD-PCirAk8gN3nLj7_0jsDGcp84tNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676963680403-q5u3q652auk6adoovfbed7s75jl1gftg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
