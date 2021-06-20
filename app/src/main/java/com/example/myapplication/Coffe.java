@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
-public class Coffe {
+import java.io.Serializable;
+
+public class Coffe implements Serializable {
     private int img;
     private String name;
     private String gia;

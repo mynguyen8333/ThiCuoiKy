@@ -15,9 +15,11 @@ import java.util.ArrayList;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
     private ArrayList<Coffe> mCoffes;
+    private OnClickListener listener;
 
-    public CustomAdapter(ArrayList<Coffe> mCoffes) {
+    public CustomAdapter(ArrayList<Coffe> mCoffes, OnClickListener listener) {
         this.mCoffes = mCoffes;
+        this.listener = listener;
     }
 
     @NonNull
@@ -37,11 +39,15 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView anh;
         TextView tvName,tvGia;
+        Coffe coffe;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             anh = itemView.findViewById(R.id.imgAnh);
             tvName = itemView.findViewById(R.id.tvName);
             tvGia = itemView.findViewById(R.id.tvGia);
+            itemView.setOnClickListener(view->{
+                listener.itemClick(coffe);
+            });
 
         }
     }
@@ -52,6 +58,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         holder.tvName.setText(coffe.getName());
         holder.tvGia.setText(coffe.getGia());
         holder.anh.setImageResource(coffe.getImg());
+        holder.coffe = coffe;
 
 
     }
