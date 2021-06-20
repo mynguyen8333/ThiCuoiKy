@@ -15,6 +15,10 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
+    /*
+    Ten dang nhap:mynguyen8333@gmail.com
+    Mat Khau:123456
+     */
     Button btnDangNhap;
     EditText edName,edpassword;
     FirebaseAuth mauth;
